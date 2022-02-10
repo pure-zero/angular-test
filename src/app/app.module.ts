@@ -5,15 +5,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { LogListComponent } from './log-list/log-list.component';
+import { InstructionsComponent } from './instructions/instructions.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([{ path: '', component: LogListComponent }]),
+    RouterModule.forRoot([{ path: '', component: InstructionsComponent }]),
   ],
-  declarations: [AppComponent, TopBarComponent, LogListComponent],
+  declarations: [AppComponent, TopBarComponent, InstructionsComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
